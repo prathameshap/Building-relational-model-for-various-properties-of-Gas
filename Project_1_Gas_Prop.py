@@ -26,8 +26,10 @@ corr = df_main.corr()
 # plot the correlation heatmap
 sns.heatmap(corr,xticklabels=corr.columns,yticklabels=corr.columns)
 plt.scatter(df_main['Idx'], df_main['Sv'], alpha=0.5)
+#the alpha para throws error in this show 
 plt.show(df_main['Idx'], df_main['Sv'], alpha=0.5)
 plt.scatter(df_main['Idx'], df_main['Th'], alpha=0.5)
+#the alpha para throws error in this show
 plt.show(df_main['Idx'], df_main['Th'], alpha=0.5)
 columns_x = ['Th', 'Sv', 'Tm', ' Pr']
 column_label = ['Idx']
